@@ -54,6 +54,9 @@ function App() {
           application, so the map feature is not available in these versions.
         </p>
       </div>
+      <div>
+        <img src="public/images/QRCode/Demo Link QR Code.png" height={200} />
+      </div>
     </div>
   );
 }
