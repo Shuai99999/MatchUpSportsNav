@@ -5,18 +5,22 @@ function App() {
     {
       title: "User Mobile (Web Simulation)",
       url: "https://matchupsportsmobile.netlify.app/",
+      icon: "📱",
     },
     {
       title: "Merchant Mobile (Web Simulation)",
       url: "https://matchupsportsmobilemerchant.netlify.app/",
+      icon: "📱",
     },
     {
       title: "User Web",
       url: "https://matchupsportsweb.netlify.app/",
+      icon: "💻",
     },
     {
       title: "Merchant Web",
       url: "https://matchupsportswebmerchant.netlify.app/",
+      icon: "💻",
     },
   ];
 
@@ -27,6 +31,7 @@ function App() {
           <span>MatchUpSports</span>
           <span>Navigation</span>
         </h1>
+
         <p className="subtitle">MatchUpSports Demo Links</p>
 
         <div className="link-list">
@@ -38,7 +43,8 @@ function App() {
               rel="noreferrer"
               className="link-item"
             >
-              {link.title}
+              <span className="icon">{link.icon}</span>
+              <span>{link.title}</span>
             </a>
           ))}
         </div>
